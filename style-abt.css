@@ -5,7 +5,19 @@ body {
 }
 
 
+.front {
+    background-image: url(images/studiofinish.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -43rem;
+}
 
+.frontoverlay {
+    /* background-color: rgba(128, 128, 128, 0.3); */
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)); /* Gradient */
+}
 
 
 header {
@@ -15,9 +27,7 @@ header {
     padding-top: 140px;
     padding-bottom: 30px;
     text-align: center;
-    color: white;
-    background-color: black;
-    
+    color: white;    
 }
 
 #when {
@@ -36,20 +46,13 @@ header {
 
 }
 
-#marq {
-    /* padding-top: 4px; */
-    font-family: "Roboto", serif;
-    font-weight: lighter;
-    font-size: 20px;
-    user-select: none;
-}
-
-#marq:hover{
-    color: aqua;
-}
-
 .navbar {
-    background-color: black;
+    border-bottom: solid #ffffff;
+    border-width: calc(1px + .01vw);
+    border-spacing: 5px;
+
+    width: 90%;
+    margin-left: 5%;
 }
 
 .navbar ul{
@@ -58,8 +61,7 @@ header {
     background-color: none;
     padding: 20px 20px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: "Roboto", serif;
     font-size: large;
 }
 .navbar a{
@@ -69,6 +71,12 @@ header {
     display: block;
     text-align: center;
     border-radius: 10px;
+
+    transition-duration: 0.4s;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
 }
 
 .navbar li{
@@ -92,7 +100,7 @@ header {
     background-color: white;
 
     background-size: cover;
-    height: 30rem;
+    height: 40rem;
 }
 
 .abt-head {
@@ -112,14 +120,29 @@ header {
 }
 
 .abt-body {
-    
 }
 
 .abt-body h1 {
-    float: left;
-    margin-left: 15%;
+    margin-top: 50px;
     font-family: "Roboto", serif;
     font-size: 30px;
-    margin-top: 50px;
-    text-align: center;
+}
+
+.abt-body h2 {
+    float: left;
+    margin-left: 15%;
+    font-size: 25px;
+}
+
+.abt-body img {
+    object-fit: contain;
+    transform: translate(-35.5rem, 4rem);
+    /* float: left; */
+}
+
+#abr {
+    /* width: 30%; */
+    margin-top: 0%;
+    margin-left: 35%;
+    text-align: left;
 }
