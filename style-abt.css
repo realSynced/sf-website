@@ -106,12 +106,12 @@ header {
 .abt-head {
     font-family: "Roboto", serif;
     font-weight: lighter;
-    font-size: 30px;
-    text-align: center;
 }
 
-.abt-head h1 {
+.abt-head h1, h4 {
     margin-bottom: 1%;
+    text-align: center;
+    font-size: 30px;
 }
 
 .abt-head h4 {
@@ -119,30 +119,33 @@ header {
     font-size: 18px;
 }
 
-.abt-body {
-}
 
 .abt-body h1 {
     margin-top: 50px;
     font-family: "Roboto", serif;
     font-size: 30px;
 }
-
-.abt-body h2 {
-    float: left;
-    margin-left: 15%;
-    font-size: 25px;
-}
-
 .abt-body img {
     object-fit: contain;
-    transform: translate(-35.5rem, 4rem);
-    /* float: left; */
+    margin-left: 10%;
+    padding: 0%;
+    user-select: none;
+}
+
+/* President: Abraham */
+#abr-title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 18%;
+}
+
+.abr-sect {
+    font-size: 25px;
+    display: inline-flex;
 }
 
 #abr {
-    /* width: 30%; */
-    margin-top: 0%;
-    margin-left: 35%;
-    text-align: left;
+    margin-left: -5rem;
+    font-size: 20px;
+    width: 40%;
 }
