@@ -12,8 +12,8 @@ header {
     font-family: "Roboto", serif;
     font-weight: lighter;
     font-size: 40px;
-    padding-top: 180px;
-    padding-bottom: 240px;
+    padding-top: 140px;
+    padding-bottom: 30px;
     text-align: center;
     color: white;
     background-color: black;
@@ -31,7 +31,6 @@ header {
 
 #where {
     margin-top: 0;
-    padding-top: 0px;
     font-weight: lighter;
     color: hsla(0, 0%, 100%, 0.658);
 
@@ -96,9 +95,31 @@ header {
     height: 30rem;
 }
 
-#resc-h1 {
+.abt-head {
     font-family: "Roboto", serif;
     font-weight: lighter;
     font-size: 30px;
+    text-align: center;
+}
+
+.abt-head h1 {
+    margin-bottom: 1%;
+}
+
+.abt-head h4 {
+    margin-top: 0%;
+    font-size: 18px;
+}
+
+.abt-body {
+    
+}
+
+.abt-body h1 {
+    float: left;
+    margin-left: 15%;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    margin-top: 50px;
     text-align: center;
 }
