@@ -71,6 +71,7 @@ header {
     display: block;
     text-align: center;
     border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 
     transition-duration: 0.4s;
 }
@@ -136,7 +137,7 @@ header {
 #abr-title {
     font-size: 30px;
     font-weight: normal;
-    margin-left: 18%;
+    margin-left: 18.5%;
 }
 
 .abr-sect {
