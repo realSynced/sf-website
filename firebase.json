@@ -6,10 +6,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "cleanURLs": true,
-    "rewrites": [ {
-      "source": "index.html",
-      "destination": "home.html"
-    } ]
+    "cleanURLs": true
   }
 }
