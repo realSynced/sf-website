@@ -4,13 +4,32 @@ body {
     overflow-x: hidden;
 }
 
+/* On mobile */
+@media screen and (max-width: 600px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mob-space {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #mob-space {
+        display: none;
+    }
+}
+
 
 .front {
     background-image: url(images/studiofinish.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -43rem; /* front background image y positioning */
+    background-position-y: 57%; /* front background image y positioning */
 }
 
 .frontoverlay {
@@ -48,14 +67,27 @@ header {
     color: hsla(0, 0%, 100%, 0.658);
 }
 
+/* navbar */
 
 .navbar {
     border-bottom: solid #ffffff;
     border-width: calc(1px + .01vw);
     border-spacing: 5px;
-
     width: 90%;
     margin-left: 5%;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    
+    .navbar {
+        border-bottom: solid #ffffff;
+        border-width: calc(1px + .01vw);
+        border-spacing: 5px;
+        width: 100%;
+        margin-left: 0%;
+    }
+
 }
 
 .navbar ul{
@@ -65,17 +97,30 @@ header {
     padding: 20px 20px;
     margin: 0px;
     font-family: "Roboto", serif;
-    font-size: large;
+    font-size: 20px;
 }
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .navbar ul{
+        overflow: hidden;
+        list-style: none;
+        background-color: none;
+        padding: 20px 20px;
+        margin: 0px;
+        font-family: "Roboto", serif;
+        font-size: 13px;
+    }
+}
+
 .navbar a{
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 5px;
     display: block;
     text-align: center;
     border-radius: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-
     transition-duration: 0.4s;
 }
 
@@ -102,23 +147,81 @@ header {
 
 .sect {
     background-color: white;
-
     background-size: cover;
     height: 30rem;
+}
+
+@media screen and (max-width: 600px) {
+    .sect {
+        height: 28rem;
+    }    
 }
 
 .resc-head {
     font-family: "Roboto", serif;
     font-weight: lighter;
-    font-size: 30px;
+    /* font-size: 30px; */
     text-align: center;
 }
 
 .resc-head h1 {
     margin-bottom: 1%;
+    font-size: 6vh;
+}
+
+@media screen and (max-width: 600px){
+    .resc-head h1 {
+        margin-top: 0%;
+    }   
 }
 
 .resc-head h4 {
     margin-top: 0%;
-    font-size: 18px;
+    margin-bottom: 3%;
+    font-size: 3vh;
+}
+
+.resc-head p {
+    margin-bottom: -1%;
+}
+
+.resc-head ul {
+    text-align: justify;
+    list-style-position: inside;
+    margin-left: 18%;
+}
+
+.desktop {
+    font-size: 4vh;
+}
+
+@media screen and (min-width: 601px) {
+
+    .desktop{
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width: 600px) {
+    .info {
+        font-size: 3vh;
+    }
+
+    .resc-head ul {
+        margin-left: 0%;
+    }
+
+    .mobile {
+        display: block;
+        font-size: 3vh;
+    }
+
+    .desktop {
+        display: none;
+    }
 }

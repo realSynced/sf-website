@@ -1,0 +1,272 @@
+body {
+    /* background-color: black; */
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+/* On mobile */
+@media screen and (max-width: 600px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mob-space {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #mob-space {
+        display: none;
+    }
+}
+
+
+
+.front {
+    background-image: url(images/studiofinish.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 57%;
+}
+
+.frontoverlay {
+    /* background-color: rgba(128, 128, 128, 0.3); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)); /* Gradient */
+}
+
+
+/* On pc */
+@media screen and (min-width: 601px) {
+
+    .main {
+        font-family: "Roboto", serif;
+        font-size: 40px;
+        height: 25rem;
+        margin-top: 10%;
+        color: white;
+    }   
+}
+
+/* On mobile */
+@media screen and (max-width: 600px) {
+
+    .main {
+        font-family: "Roboto", serif;
+        height: 13rem;
+        margin-top: 20%;
+        color: white;
+    }
+}
+
+.main h1 {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 2.5%;
+}
+
+.main h4 {
+    font-weight: lighter;
+    margin-bottom: -5px;
+    color: hsla(0, 0%, 100%, 0.658);
+}
+
+/* On mobile */
+@media screen and (max-width: 600px) {
+    .main h4 {
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: -5px;
+        color: hsla(0, 0%, 100%, 0.658);
+    } 
+}
+
+.main p {
+    color: hsla(0, 0%, 100%, 0.658);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .main p {
+        color: hsla(0, 0%, 100%, 0.658);
+        font-size: 15px;
+        font-weight: lighter;
+    }   
+}
+
+.location {
+    text-align: center;
+}
+
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .location {
+        text-align: center;
+    }
+}
+
+
+
+
+button {
+    display: block;
+    margin-top: -11.5%;
+    margin-left: 44%;
+}
+
+/* a tag of the button */
+#ed-but {
+    color: rgb(131, 131, 131);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#editing-cont{
+    background-color: hwb(0 0% 100% / 0.424);
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: hwb(0 71% 29% / 0.311);
+    border-width: 0.1px;
+    /* border: none; */
+    transition-duration: 0.4s;
+}
+
+/* On mobile */
+@media screen and (max-width: 600px) {
+
+    #editing-cont{
+        display: none; /* Disable's button */
+    }
+}
+
+#editing-cont:hover{
+    background-color: hwb(0 33% 67% / 0.115);
+    cursor: pointer;
+}
+
+/* navbar */
+
+.navbar {
+    border-bottom: solid #ffffff;
+    border-width: calc(1px + .01vw);
+    border-spacing: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    
+    .navbar {
+        border-bottom: solid #ffffff;
+        border-width: calc(1px + .01vw);
+        border-spacing: 5px;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}
+
+.navbar ul{
+    overflow: hidden;
+    list-style: none;
+    background-color: none;
+    padding: 20px 20px;
+    margin: 0px;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .navbar ul{
+        overflow: hidden;
+        list-style: none;
+        background-color: none;
+        padding: 20px 20px;
+        margin: 0px;
+        font-family: "Roboto", serif;
+        font-size: 13px;
+    }
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.4s;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar li{
+    float: right;
+}
+
+#sf-li {
+    float: left;
+}
+
+.sect {
+    background-color: white;
+    font-family: "Roboto", serif;
+    padding-bottom: 10px;
+}
+
+.hrw h1 {
+    font-family: "Roboto", serif;
+    font-size: 190%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .hrw h1 {
+        margin-top: 0%;
+    }   
+}
+
+.hrw ul {
+    text-align: justify;
+    list-style-position: inside;
+    margin-left: 39%;
+}
+
+@media screen and (max-width: 600px){
+    .hrw ul {
+        list-style-position: inside;
+        margin-left: 19%;
+    }   
+}
+
+.hrw ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.bod {
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 0%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .bod {
+        font-size: 15px;
+    }   
+}
